@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/main/home.component';
 import { PaginaCandidaturaComponent } from './components/pagina-candidatura/main/pagina-candidatura.component';
 import { SharedModule } from './shared/shared.module';
+import { NavBarComponent } from './components/nav-bar/main/nav-bar.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    PaginaCandidaturaComponent
+    PaginaCandidaturaComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],
