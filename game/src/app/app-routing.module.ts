@@ -7,6 +7,7 @@ const routes: Routes = [
   { path: 'pagina-candidatura', loadChildren: () => import('./components/pagina-candidatura/pagina-candidatura.module').then(m => m.PaginaCandidaturaModule)},
   { path: 'login', loadChildren: () => import('./components/login/login.module').then(m => m.LoginModule)},
   { path: 'chi-siamo', loadChildren: () => import('./components/chi-siamo/chi-siamo.module').then(m => m.ChiSiamoModule)},
+  { path: 'i-nostri-valori', loadChildren: () => import('./components/i-nostri-valori/i-nostri-valori.module').then(m => m.INostriValoriModule)},
 ];
 
 @NgModule({
