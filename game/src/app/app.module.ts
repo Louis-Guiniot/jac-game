@@ -8,7 +8,12 @@ import { PaginaCandidaturaComponent } from './components/pagina-candidatura/main
 import { SharedModule } from './shared/shared.module';
 import { NavBarComponent } from './components/nav-bar/main/nav-bar.component';
 import { HttpClientModule } from '@angular/common/http';
+<<<<<<< HEAD
 import { DoveSiamoComponent } from './components/dove-siamo/main/dove-siamo.component';
+=======
+import { ChiSiamoComponent } from './components/chi-siamo/main/chi-siamo.component';
+import { LoginComponent } from './components/login/main/login.component';
+>>>>>>> origin/louis-pagina-candidatura
 
 @NgModule({
   declarations: [
@@ -16,7 +21,12 @@ import { DoveSiamoComponent } from './components/dove-siamo/main/dove-siamo.comp
     HomeComponent,
     PaginaCandidaturaComponent,
     NavBarComponent,
+<<<<<<< HEAD
     DoveSiamoComponent
+=======
+    ChiSiamoComponent,
+    LoginComponent
+>>>>>>> origin/louis-pagina-candidatura
   ],
   imports: [
     BrowserModule,
