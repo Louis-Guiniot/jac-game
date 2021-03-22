@@ -5,10 +5,16 @@ const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule)},
   { path: 'pagina-candidatura', loadChildren: () => import('./components/pagina-candidatura/pagina-candidatura.module').then(m => m.PaginaCandidaturaModule)},
+<<<<<<< HEAD
   { path: 'login', loadChildren: () => import('./components/login/login.module').then(m => m.LoginModule)},
   { path: 'chi-siamo', loadChildren: () => import('./components/chi-siamo/chi-siamo.module').then(m => m.ChiSiamoModule)},
   { path: 'i-nostri-valori', loadChildren: () => import('./components/i-nostri-valori/i-nostri-valori.module').then(m => m.INostriValoriModule)},
+=======
+  { path: 'dove-siamo', loadChildren: () => import('./components/dove-siamo/dove-siamo.module').then(m => m.DoveSiamoModule)},
+ 
+>>>>>>> origin/matteo_ufficiale
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
