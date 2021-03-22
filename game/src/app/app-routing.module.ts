@@ -6,7 +6,7 @@ const routes: Routes = [
   { path: 'home', loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule)},
   { path: 'pagina-candidatura', loadChildren: () => import('./components/pagina-candidatura/pagina-candidatura.module').then(m => m.PaginaCandidaturaModule)},
 <<<<<<< HEAD
-  { path: 'dove-siamo', loadChildren: () => import('./components/dove-siamo/dove-siamo.module').then(m => m.DoveSiamoModule)},
+  { path: 'dove-siamo', loadChildren: () => import('./components/dove-siamo/dove-siamo.module').then(m => m.DoveSiamoModule)}, 
  
 =======
   { path: 'login', loadChildren: () => import('./components/login/login.module').then(m => m.LoginModule)},
