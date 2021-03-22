@@ -8,13 +8,17 @@ import { PaginaCandidaturaComponent } from './components/pagina-candidatura/main
 import { SharedModule } from './shared/shared.module';
 import { NavBarComponent } from './components/nav-bar/main/nav-bar.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ChiSiamoComponent } from './components/chi-siamo/main/chi-siamo.component';
+import { LoginComponent } from './components/login/main/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     PaginaCandidaturaComponent,
-    NavBarComponent
+    NavBarComponent,
+    ChiSiamoComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
