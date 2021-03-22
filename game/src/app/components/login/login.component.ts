@@ -2,7 +2,7 @@ import { Injectable, OnInit, Component } from '@angular/core';
 import { UsersProfile } from 'src/app/model/users-profile';
 
 import { LoginService } from 'src/app/services/login.service';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup  } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
