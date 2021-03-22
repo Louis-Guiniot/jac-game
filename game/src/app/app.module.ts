@@ -8,11 +8,11 @@ import { PaginaCandidaturaComponent } from './components/pagina-candidatura/main
 import { SharedModule } from './shared/shared.module';
 import { NavBarComponent } from './components/nav-bar/main/nav-bar.component';
 import { HttpClientModule } from '@angular/common/http';
+
 import { DoveSiamoComponent } from './components/dove-siamo/main/dove-siamo.component';
 import { ChiSiamoComponent } from './components/chi-siamo/main/chi-siamo.component';
 import { LoginComponent } from './components/login/main/login.component';
-
-
+import { INostriValoriComponent } from './components/i-nostri-valori/main/i-nostri-valori.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +22,8 @@ import { LoginComponent } from './components/login/main/login.component';
     NavBarComponent,
     DoveSiamoComponent,
     ChiSiamoComponent,
-    LoginComponent
+    LoginComponent,
+    INostriValoriComponent
 
   ],
   imports: [
