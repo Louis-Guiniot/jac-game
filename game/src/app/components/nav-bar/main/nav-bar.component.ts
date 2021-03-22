@@ -17,6 +17,8 @@ export class NavBarComponent implements OnInit {
     {url:'pagina-candidatura',label:'candidati'},
   ]
 
+  loginUrl = 'login'
+
   ngOnInit(): void {
   }
 
