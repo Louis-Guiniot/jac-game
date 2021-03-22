@@ -6,23 +6,21 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/main/home.component';
 import { PaginaCandidaturaComponent } from './components/pagina-candidatura/main/pagina-candidatura.component';
 import { SharedModule } from './shared/shared.module';
-import { CommonModule } from '@angular/common';
-import { LoginComponent } from './components/login/login.component';
+import { NavBarComponent } from './components/nav-bar/main/nav-bar.component';
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     PaginaCandidaturaComponent,
-    LoginComponent
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    FormsModule,
-    ReactiveFormsModule,
-    CommonModule,
-    AppRoutingModule
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent],

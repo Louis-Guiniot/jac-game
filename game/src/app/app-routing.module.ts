@@ -4,8 +4,8 @@ import { LoginComponent } from './components/login/login.component';
 import { LoginGuardGuard } from './services/login-guard.guard';
 
 const routes: Routes = [
-   { path: '', redirectTo: '/login', pathMatch: 'full'},
-   { path: 'home', loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule)},
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', loadChildren: () => import('./components/home/home.module').then(m => m.HomeModule)},
   { path: 'pagina-candidatura', loadChildren: () => import('./components/pagina-candidatura/pagina-candidatura.module').then(m => m.PaginaCandidaturaModule)},
   { path: 'login', component: LoginComponent, canActivate:[LoginGuardGuard]  },
  
