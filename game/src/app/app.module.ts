@@ -1,6 +1,6 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/main/home.component';
@@ -8,9 +8,12 @@ import { PaginaCandidaturaComponent } from './components/pagina-candidatura/main
 import { SharedModule } from './shared/shared.module';
 import { NavBarComponent } from './components/nav-bar/main/nav-bar.component';
 import { HttpClientModule } from '@angular/common/http';
+
+import { DoveSiamoComponent } from './components/dove-siamo/main/dove-siamo.component';
 import { ChiSiamoComponent } from './components/chi-siamo/main/chi-siamo.component';
 import { LoginComponent } from './components/login/main/login.component';
 import { AreaPersonaleComponent } from './components/area-personale/main/area-personale.component';
+import { INostriValoriComponent } from './components/i-nostri-valori/main/i-nostri-valori.component';
 
 @NgModule({
   declarations: [
@@ -18,9 +21,12 @@ import { AreaPersonaleComponent } from './components/area-personale/main/area-pe
     HomeComponent,
     PaginaCandidaturaComponent,
     NavBarComponent,
+    DoveSiamoComponent,
     ChiSiamoComponent,
     LoginComponent,
-    AreaPersonaleComponent
+    AreaPersonaleComponent,
+    INostriValoriComponent
+
   ],
   imports: [
     BrowserModule,

@@ -1,63 +1,16 @@
 {
+    
     "users": [{
             "id": 1,
-            "nome": "louis",
-            "cognome": "guiniot",
-            "email": "louis.guiniot@gmail.com",
+            "nome": "matteo",
+            "cognome": "brecianini",
+            "username": "brescio",
+            "email": "mattteo.bs2000@gmail.com",
             "password": "123",
-            "data-nascita": "",
-            "genere": "",
-            "cita": "",
-            "cap": "",
-            "via": "",
-            "numero-civico": "",
-            "numero-cellulare": "",
-            "foto": ""
-        },
-        {
-            "nome": "",
-            "cognome": "",
-            "email": "",
-            "password": "",
-            "id": 2,
-            "data-nascita": "",
-            "genere": "",
-            "cita": "",
-            "cap": "",
-            "via": "",
-            "numero-civico": "",
-            "numero-cellulare": "",
-            "foto": ""
-        },
-        {
-            "nome": "",
-            "cognome": "",
-            "email": "",
-            "password": "",
-            "id": 3,
-            "data-nascita": "",
-            "genere": "",
-            "cita": "",
-            "cap": "",
-            "via": "",
-            "numero-civico": "",
-            "numero-cellulare": "",
-            "foto": ""
-        },
-        {
-            "nome": "Sara",
-            "cognome": "Facheris",
-            "email": "louis99679@gmail.com",
-            "password": "123",
-            "id": 4,
-            "data-nascita": "",
-            "genere": "",
-            "cita": "",
-            "cap": "",
-            "via": "",
-            "numero-civico": "",
-            "numero-cellulare": "",
-            "foto": ""
+            "genere": "maschio",
+            "telefono": "15478963256",
+            "image": "brescio.jpg"
         }
+        
     ]
 }
