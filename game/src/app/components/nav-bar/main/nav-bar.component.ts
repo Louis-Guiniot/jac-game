@@ -15,6 +15,8 @@ export class NavBarComponent implements OnInit {
     {url:'dove-siamo',label:'dove siamo'},
     {url:'valori',label:'i nostri valori'},
     {url:'pagina-candidatura',label:'candidati'},
+    {url:'area-candidatura',label:'candidati'},
+
   ]
 
   loginUrl = 'login'

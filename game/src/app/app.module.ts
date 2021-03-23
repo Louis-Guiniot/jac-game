@@ -10,6 +10,7 @@ import { NavBarComponent } from './components/nav-bar/main/nav-bar.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ChiSiamoComponent } from './components/chi-siamo/main/chi-siamo.component';
 import { LoginComponent } from './components/login/main/login.component';
+import { AreaPersonaleComponent } from './components/area-personale/main/area-personale.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LoginComponent } from './components/login/main/login.component';
     PaginaCandidaturaComponent,
     NavBarComponent,
     ChiSiamoComponent,
-    LoginComponent
+    LoginComponent,
+    AreaPersonaleComponent
   ],
   imports: [
     BrowserModule,
