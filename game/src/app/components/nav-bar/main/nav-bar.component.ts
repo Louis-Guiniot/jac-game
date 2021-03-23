@@ -13,7 +13,7 @@ export class NavBarComponent implements OnInit {
     {url:'home',label:'home'},
     {url:'chi-siamo',label:'chi siamo'},
     {url:'dove-siamo',label:'dove siamo'},
-    {url:'valori',label:'i nostri valori'},
+    {url:'i-nostri-valori',label:'i nostri valori'},
     {url:'pagina-candidatura',label:'candidati'},
     {url:'area-candidatura',label:'candidati'},
 
