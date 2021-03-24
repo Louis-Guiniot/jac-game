@@ -1,47 +1,64 @@
-<h1>REGISTRAZIONE</h1>
+<div class="box">
+    <div class="wrapper">
+        <div class="text">
+            <div class="content">
+                <div class="header">candidati</div>
+                <div class="text">
 
+                    Benvenuto/a, stai per registrarti nella tua area personale di TALENTI4FUTURE, qui potrai autocandidarti. È tutto molto facile e chiaro, basterà aggiungere una tua foto in primo piano, compilare i dati anagrafici richiesti e infine caricare il tuo CV.
+                    Una volta compilata la tua area personale attendi un nostro feedback immediato positivo o negativo che sia, ma noi siamo fiduciosi non deluderci!! A questo non ci resta che augurarti una buona autocandidatura! Il team TALENTI4FUTURE
 
-<h4>form</h4>
-
-<div class="form">
-    <form [formGroup]="formSignin" (ngSubmit)="submitForm()">
-        <div class="row">
-            <div class="col">
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control form-control-sm" formControlName="nome">
-                    <label for="floatingInput">Nome</label>
                 </div>
-            </div>
-            <div class="col">
 
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control form-control-sm" formControlName="cognome">
-                    <label for="floatingInpu">Cognome</label>
-                </div>
             </div>
+
+        </div>
+        <div class="form">
+            <form [formGroup]="formSignin" (ngSubmit)="submitForm()">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <span class="form-group has-float-label">
+                                    <input type="text" class="form-control" placeholder="insert" formControlName="nome">
+                                    <label for="floatingInput">Nome</label>
+                                </span>
+                        </div>
+                        <div class="col">
+                            <span class="form-group has-float-label">
+                                    <input type="text" class="form-control" placeholder="insert" formControlName="cognome">
+                                    <label for="floatingInpu">Cognome</label>
+                                </span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <span class="form-group has-float-label">
+                                    <input type="text" class="form-control" placeholder="insert" formControlName="email">
+                                    <label for="floatingInput">Email</label>
+                                </span>
+                        </div>
+                        <div class="col">
+
+                            <span class="form-group has-float-label">
+                                    <input type="password" class="form-control" placeholder="insert" formControlName="password">
+                                    <label for="floatingPassword">Password</label>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="reset" class="btn btn-reset">
+                        cancella
+                    </button>
+                    <button type="submit" class="btn btn-outline-dark">
+                            registrati
+                        </button>
+
+                </div>
+            </form>
         </div>
 
-        <div class="row">
-            <div class="col">
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control form-control-sm" formControlName="email">
-                    <label for="floatingInput">Email</label>
-                </div>
-            </div>
-            <div class="col">
+    </div>
 
-                <div class="form-floating mb-3">
-                    <input type="password" class="form-control form-control-sm" formControlName="password">
-                    <label for="floatingPassword">Password</label>
-                </div>
-            </div>
-        </div>
-
-        <button type="submit" class="btn btn-outline-dark">
-            registrati
-        </button>
-        <button type="reset" class="btn btn-outline-danger">
-            cancella
-        </button>
-    </form>
 </div>
