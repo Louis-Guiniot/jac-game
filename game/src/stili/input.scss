@@ -1,0 +1,64 @@
+button {
+    width: 30%;
+    font-size: 20px;
+    margin-top: 1%;
+}
+
+.btn-reset {
+    background-color: #fff;
+    color: #ff755d;
+    border: 1px solid #ff755d;
+    &:hover {
+        background-color: #ff755d;
+        color: #fff;
+    }
+}
+
+label {
+    font-weight: 150 !important;
+    font-size: 20px;
+}
+
+input,
+select {
+    font-size: 25px;
+    font-weight: 200!important;
+     ::placeholder {
+        font-weight: 200!important;
+        color: #000;
+    }
+}
+
+input:focus {
+    box-shadow: none;
+    border: 1px rgba(205, 219, 219)solid;
+}
+
+@media (max-width: 800px) {
+    button {
+        width: 30%;
+        font-size: 15px;
+        margin-top: 1%;
+    }
+    .btn-reset {
+        background-color: #fff;
+        color: #ff755d;
+        border: 1px solid #ff755d;
+        &:hover {
+            background-color: #ff755d;
+            color: #fff;
+        }
+    }
+    input,
+    select {
+        font-size: 15px;
+        font-weight: 200!important;
+         ::placeholder {
+            font-weight: 200!important;
+            color: #000;
+        }
+    }
+    label {
+        font-size: 10px;
+    }
+}

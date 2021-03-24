@@ -1,0 +1,13 @@
+.info-header {
+    font-size: 25px;
+    font-weight: 200!important;
+    border-bottom: 2px solid #ff755d;
+}
+
+@media (max-width: 800px) {
+    .info-header {
+        font-size: 20px;
+        font-weight: 200!important;
+        border-bottom: 2px solid #ff755d;
+    }
+}
