@@ -1,27 +1,47 @@
-<p>login works!</p>
-<div class="card">
-    <div class="card-header">
-        Login
-    </div>
-    <div class="card-body">
-        <div class="row">
-            <div class="col">
-                <div class="form-floating mb-3">
-                    <input type="email" class="form-control form-control-sm" formControlName="nome">
-                    <label for="floatingInput">Email</label>
-                </div>
-            </div>
-            <div class="col">
+<div class="box">
+    <div class="wrapper">
+        <div class="text">
+            <div class="content">
+                <div class="header">accedi</div>
+                <div class="text">
 
-                <div class="form-floating mb-3">
-                    <input type="password" class="form-control form-control-sm" formControlName="cognome">
-                    <label for="floatingInpu">Password</label>
+                    Benvenuto/a, stai per accedere nella tua area personale di TALENTI4FUTURE, qui potrai autocandidarti
                 </div>
+
             </div>
+
         </div>
+        <div class="form">
+            <form>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <span class="form-group has-float-label">
+                                <input type="email" class="form-control" placeholder="insert" formControlName="nome">
+                                <label for="floatingInput">Email</label>
+                            </span>
+                        </div>
+                        <div class="col">
+
+                            <span class="form-group has-float-label">
+                                <input type="password" class="form-control" placeholder="insert" formControlName="cognome">
+                                <label for="floatingInpu">Password</label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="reset" class="btn btn-reset">
+                        cancella
+                    </button>
+                    <button type="submit" class="btn btn-outline-dark">
+                            login
+                        </button>
+
+                </div>
+            </form>
+        </div>
+
     </div>
 
-    <button type="submit" class="btn btn-outline-dark">
-    entra
-</button>
 </div>
