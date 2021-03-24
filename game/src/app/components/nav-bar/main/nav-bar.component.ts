@@ -15,11 +15,10 @@ export class NavBarComponent implements OnInit {
     {url:'dove-siamo',label:'dove siamo'},
     {url:'i-nostri-valori',label:'i nostri valori'},
     {url:'pagina-candidatura',label:'candidati'},
-    {url:'area-candidatura',label:'candidati'},
+    {url:'area-personale',label:'area personale'},
+    {url:'login',label:'login'},
 
   ]
-
-  loginUrl = 'login'
 
   ngOnInit(): void {
   }
