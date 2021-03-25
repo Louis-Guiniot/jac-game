@@ -9,12 +9,11 @@ nav {
 }
 
 li {
-    width: fit-content;
     width: 200px;
 }
 
 .nav-item {
-    width: fit-content;
+    width: auto;
 }
 
 a {
@@ -27,6 +26,12 @@ a {
     }
 }
 
-.logo {
-    height: 90px;
+.active {
+    font-weight: 200;
+}
+
+@media (max-width: 1150px) {
+    a {
+        font-size: 20px;
+    }
 }
