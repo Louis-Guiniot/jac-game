@@ -1,30 +1,33 @@
 <div class="box">
     <div class="wrapper">
-        <div class="text">
+        <div class="wrap-text">
             <div class="content">
                 <div class="header">area personale</div>
                 <div class="text">Benevenuto !</div>
             </div>
         </div>
+
+
+
         <div class="form">
             <form [formGroup]="areaPersonaleForm">
                 <div class="modal-body">
 
                     <div class="modal-header info-header">
                         <span>anagrafica generale <i class="bi bi-person-circle"></i></span>
-
+                        <img src="../assets/areapers-foto.jpeg" alt="">
                     </div>
                     <div class="modal-body">
                         <div class="row">
                             <div class="col">
                                 <span class="form-group has-float-label">
-                                    <input type="text" class="form-control" placeholder="insert" formControlName="nome" />
+                                    <input type="text" class="form-control" placeholder="inserisci email" formControlName="nome" />
                                     <label for="floatingInput">Email</label>
                                 </span>
                             </div>
                             <div class="col">
                                 <span class="form-group has-float-label">
-                                    <input type="password" class="form-control" placeholder="insert"
+                                    <input type="password" class="form-control" placeholder="inserisci password"
                                         formControlName="cognome" />
                                     <label for="floatingInpu">Password</label>
                                 </span>
@@ -33,13 +36,13 @@
                         <div class="row">
                             <div class="col">
                                 <span class="form-group has-float-label">
-                                    <input type="text" class="form-control" placeholder="insert" formControlName="nome" />
+                                    <input type="text" class="form-control" placeholder="inserisci nome" formControlName="nome" />
                                     <label for="floatingInput">Nome</label>
                                 </span>
                             </div>
                             <div class="col">
                                 <span class="form-group has-float-label">
-                                    <input type="text" class="form-control" placeholder="insert"
+                                    <input type="text" class="form-control" placeholder="inserisci cognome"
                                         formControlName="cognome" />
                                     <label for="floatingInpu">Cognome</label>
                                 </span>
@@ -97,7 +100,7 @@
 
 
                         <span class="form-group has-float-label">
-                            <input type="text" class="form-control" placeholder="insert" formControlName="nome" />
+                            <input type="text" class="form-control" placeholder="inserisci numero di telefono" formControlName="nome" />
                             <label for="floatingInput">Cellulare</label>
                         </span>
                     </div>
@@ -112,21 +115,21 @@
                         <div class="row">
                             <div class="col">
                                 <span class="form-group has-float-label">
-                                <input type="text" class="form-control" placeholder="insert"
+                                <input type="text" class="form-control" placeholder="inserisci città"
                                     formControlName="cognome" />
                                 <label for="floatingInpu">Citta'</label>
                             </span>
                             </div>
                             <div class="col-6">
                                 <span class="form-group has-float-label">
-                                <input type="text" class="form-control" placeholder="insert" formControlName="nome" />
+                                <input type="text" class="form-control" placeholder="inserisci indirizzo" formControlName="nome" />
                                 <label for="floatingInput">Indirizzo</label>
                             </span>
                             </div>
 
                             <div class="col-2">
                                 <span class="form-group has-float-label">
-                                <input type="text" class="form-control" placeholder="insert"
+                                <input type="text" class="form-control" placeholder="inserisci n° civico"
                                     formControlName="cognome" />
                                 <label for="floatingInpu">n°</label>
                             </span>
