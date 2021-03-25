@@ -27,8 +27,14 @@
     .text {
         width: 100%;
         font-weight: 100;
-        font-size: 22px;
+        font-size: 25px;
         margin: 0;
+        q {
+            font-size: 40px;
+        }
+        cite {
+            font-size: 30px;
+        }
     }
     .bolder {
         font-weight: 300;
