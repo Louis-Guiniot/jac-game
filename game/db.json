@@ -1,16 +1,29 @@
 {
-    
-    "users": [{
-            "id": 1,
-            "nome": "matteo",
-            "cognome": "brecianini",
-            "username": "brescio",
-            "email": "mattteo.bs2000@gmail.com",
-            "password": "123",
-            "genere": "maschio",
-            "telefono": "15478963256",
-            "image": "brescio.jpg"
-        }
-        
-    ]
+  "users": [
+    {
+      "id": 1,
+      "nome": "matteo",
+      "cognome": "brecianini",
+      "username": "brescio",
+      "email": "mattteo.bs2000@gmail.com",
+      "password": "123",
+      "genere": "maschio",
+      "telefono": "15478963256",
+      "image": "brescio.jpg"
+    },
+    {
+      "nome": "matteo",
+      "cognome": "bresciani",
+      "email": "matteo.b2000@gmail.com",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "nome": "pino",
+      "cognome": "pino",
+      "email": "prova@gmail.com",
+      "password": "123456",
+      "id": 3
+    }
+  ]
 }
