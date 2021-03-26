@@ -1,14 +1,19 @@
 @import "src/stili/grid-base.scss";
 .img-bottom {
-    height: 600px;
-    width: 1300px;
-   // padding-right: 15px;
-    padding-left: 140px;
+    height: 500px;
+    width: 50%;
+    margin: auto;
+    // padding-right: 15px;
 }
 
-.primo{
+.primo {
     position: relative;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
+}
+
+.text {
+    font-family: Dancing Script;
+    font-size: 200px;
 }
