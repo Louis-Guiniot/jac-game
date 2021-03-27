@@ -5,7 +5,7 @@
 
 .wrapper {
     display: grid;
-    width: 100%;
+    width: 80%;
     margin: 0;
     grid-template-rows: auto auto auto;
     grid-template-columns: 100%;
@@ -71,6 +71,35 @@
 .img-bottom {
     width: 100%;
     height: 400px;
+}
+
+.grid-corsi {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-columns: 150px auto;
+    width: 100%;
+    column-gap: 10px;
+}
+
+.corsi-header {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-end: 2;
+    grid-column-start: 1;
+}
+
+.primo-anno {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.sec-anno {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 @media screen and (max-width: 800px) {
