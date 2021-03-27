@@ -17,3 +17,14 @@
     font-family: Dancing Script;
     font-size: 200px;
 }
+
+@media (max-width: 1500px) {
+    .img-bottom {
+        width: 80%;
+        height: 500px;
+    }
+    .text {
+        font-family: Dancing Script;
+        font-size: 150px;
+    }
+}

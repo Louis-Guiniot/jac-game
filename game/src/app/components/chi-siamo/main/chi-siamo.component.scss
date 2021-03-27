@@ -1,1 +1,18 @@
 @import "src/stili/grid-base.scss";
+.ore-row {
+    margin-top: 10px;
+    width: 100%;
+    p {
+        margin: 0;
+        padding: 15px;
+        font-weight: 400;
+    }
+    i {
+        font-size: 30px;
+    }
+}
+
+td:nth-child(even),
+th:nth-child(even) {
+    text-align: right;
+}
