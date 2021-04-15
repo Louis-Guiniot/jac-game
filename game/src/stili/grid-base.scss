@@ -17,7 +17,6 @@
 }
 
 .content {
-    padding: 1%;
     .header {
         font-size: 45px;
         width: 100%;
@@ -68,7 +67,21 @@
     grid-row-end: 4;
 }
 
+.grid-contact {
+    display: grid;
+    width: 60%;
+    margin: auto;
+    grid-template-columns: 50% 50%;
+    padding: 15px;
+    gap: 20px;
+}
+
 .img-bottom {
+    width: 100%;
+    height: 600px;
+}
+
+.img-home {
     width: 100%;
     height: 400px;
 }
