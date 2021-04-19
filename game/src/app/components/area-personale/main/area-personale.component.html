@@ -3,7 +3,9 @@
         <div class="wrap-text">
             <div class="content">
                 <div class="header">area personale</div>
-                <div class="text">Benevenuto !</div>
+                <div class="text">
+                    Benevenuto nella tua area personale ! <br> Qui puoi inserire e aggiornare le tue informazioni. Una volta compilato questo form OPEN UP avrà a disposizione tutte le informazioni valide per procedere con la selezione.
+                </div>
             </div>
         </div>
 
@@ -11,161 +13,138 @@
 
         <div class="form">
             <form [formGroup]="areaPersonaleForm">
-                <div class="modal-body">
 
-                    <div class="modal-header info-header">
-                        <span>anagrafica generale <i class="bi bi-person-circle"></i></span>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col">
-                                <span class="form-group has-float-label">
+                <div class="modal-header info-header">
+                    <span>anagrafica generale <i class="bi bi-person-circle"></i></span>
+                </div>
+                <div class="body-informations">
+                    <div class="row">
+                        <div class="col">
+                            <span class="form-group has-float-label">
                                     <input type="text" class="form-control" placeholder="inserisci email" formControlName="nome" />
                                     <label for="floatingInput">Email</label>
                                 </span>
-                            </div>
-                            <div class="col">
-                                <span class="form-group has-float-label">
+                        </div>
+                        <div class="col">
+                            <span class="form-group has-float-label">
                                     <input type="password" class="form-control" placeholder="inserisci password"
                                         formControlName="cognome" />
                                     <label for="floatingInpu">Password</label>
                                 </span>
-                            </div>
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                <span class="form-group has-float-label">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <span class="form-group has-float-label">
                                     <input type="text" class="form-control" placeholder="inserisci nome" formControlName="nome" />
                                     <label for="floatingInput">Nome</label>
                                 </span>
-                            </div>
-                            <div class="col">
-                                <span class="form-group has-float-label">
+                        </div>
+                        <div class="col">
+                            <span class="form-group has-float-label">
                                     <input type="text" class="form-control" placeholder="inserisci cognome"
                                         formControlName="cognome" />
                                     <label for="floatingInpu">Cognome</label>
                                 </span>
-                            </div>
                         </div>
+                    </div>
 
-                        <div class="row">
-                            <div class="col">
-                                <span class="form-group has-float-label">
-                                    <select class="form-control" formControlName="nome">
-                                        <option select> il tuo mese di nascita</option>
-                                        <option *ngFor="let mese of mesiSelect" value="{{mese.label}}">{{mese.label}}</option>
-                                    </select>
-                                    <label for="floatingInput">Mese</label>
-                                </span>
-                            </div>
-                            <div class="col">
-                                <span class="form-group has-float-label">
-                                    <select class="form-control" formControlName="nome">
-                                        <option select> il tuo giorno di nascita</option>
-                                        <option *ngFor="let giorno of giorniSelect" value="{{giorno.label}}">{{giorno.label}}</option>
-                                    </select>
-                                    <label for="floatingInput">Giorno</label>
-                                </span>
-                            </div>
-                            <div class="col">
-                                <span class="form-group has-float-label">
-                                    <select class="form-control" formControlName="nome">
-                                        <option select> il tuo anno di nascita</option>
-                                        <option *ngFor="let anno of anniSelect" value="{{anno.label}}">{{anno.label}}</option>
-                                    </select>
-                                    <label for="floatingInput">Anno</label>
-                                </span>
-                            </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <span class="form-group has-float-label">
+                                        <select class="form-control" formControlName="nome">
+                                            <option value="">Seleziona genere</option>
+                                            <option value="">Uomo</option>
+                                            <option value="">Donna</option>
+                                            <option value="">Altro</option>
+                                        </select>
+                                        <label for="floatingInput">Genere</label>
+                                    </span>
                         </div>
-
-                        <div class="row">
-                            <div class="col">
-                                <div class="form-group">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="femmina" />
-                                        <label class="form-check-label" for="inlineRadio1">MASCHIO</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="maschio" />
-                                        <label class="form-check-label" for="inlineRadio2">FEMMINA</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="altro" />
-                                        <label class="form-check-label" for="inlineRadio3">ALTRO</label>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col">
+                            <span class="form-group has-float-label">
+                                <input type="date" id="start" name="trip-start"
+       value="2018-07-22"
+       min="2018-01-01" max="2018-12-31" class="form-control">
+                                <label for="floatingInput">Data di nascita</label>
+                            </span>
                         </div>
+                    </div>
 
-
-                        <span class="form-group has-float-label">
+                    <span class="form-group has-float-label">
                             <input type="text" class="form-control" placeholder="inserisci numero di telefono" formControlName="nome" />
                             <label for="floatingInput">Cellulare</label>
                         </span>
+
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupFile01">foto</label>
+                        <input type="file" class="form-control" id="inputGroupFile01">
                     </div>
 
+                </div>
 
 
 
-                    <div class="modal-header info-header">
-                        <span>abitazione <i class="bi bi-house"></i></span>
-                    </div>
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-3">
-                                <span class="form-group has-float-label">
+
+                <div class="modal-header info-header">
+                    <span>abitazione <i class="bi bi-house-fill"></i></span>
+                </div>
+                <div class="body-informations">
+                    <div class="row">
+                        <div class="col-3">
+                            <span class="form-group has-float-label">
                                 <input type="text" class="form-control" placeholder="inserisci città"
                                     formControlName="cognome" />
                                 <label for="floatingInpu">Citta'</label>
                             </span>
-                            </div>
+                        </div>
 
 
-                            <div class="col-1">
-                                <span class="form-group has-float-label">
+                        <div class="col-1">
+                            <span class="form-group has-float-label">
                                 <input type="text" class="form-control" placeholder="inserisci cap"
                                     formControlName="cognome" />
                                 <label for="floatingInpu">CAP</label>
                             </span>
-                            </div>
+                        </div>
 
-                            <div class="col-6">
-                                <span class="form-group has-float-label">
+                        <div class="col-6">
+                            <span class="form-group has-float-label">
                                 <input type="text" class="form-control" placeholder="inserisci indirizzo" formControlName="nome" />
                                 <label for="floatingInput">Indirizzo</label>
                             </span>
-                            </div>
+                        </div>
 
-                            <div class="col-2">
-                                <span class="form-group has-float-label">
+                        <div class="col-2">
+                            <span class="form-group has-float-label">
                                 <input type="text" class="form-control" placeholder="inserisci n° civico"
                                     formControlName="cognome" />
                                 <label for="floatingInpu">n°</label>
                             </span>
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                    <div class="modal-header info-header">
-                        <span>file richiesti <i class="bi bi-file-earmark-arrow-up"></i></span>
-                    </div>
-                    <div class="modal-body">
-
-                        <div class="input-group mb-3">
-                            <label class="input-group-text" for="inputGroupFile01">Carica il CV</label>
-                            <input type="file" class="form-control" id="inputGroupFile01">
                         </div>
 
 
+                    </div>
+                </div>
+
+                <div class="modal-header info-header">
+                    <span>file richiesti <i class="bi bi-file-earmark-arrow-up-fill"></i></span>
+                </div>
+                <div class="body-informations">
+
+                    <div class="input-group mb-3">
+                        <label class="input-group-text" for="inputGroupFile01">Carica il CV</label>
+                        <input type="file" class="form-control" id="inputGroupFile01">
                     </div>
 
 
                 </div>
+
+
                 <div class="modal-footer">
-                    <button type="reset" class="btn btn-reset">cancella</button>
-                    <button type="submit" class="btn btn-outline-dark">salva</button>
+                    <button type="reset" class="btn btn-danger">cancella</button>
+                    <button type="submit" class="btn btn-submit">salva</button>
                 </div>
             </form>
         </div>

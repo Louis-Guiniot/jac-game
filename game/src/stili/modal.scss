@@ -1,13 +1,17 @@
 .info-header {
     font-size: 25px;
     font-weight: 200!important;
-    border-bottom: 2px solid #ff755d;
+    // border-bottom: 2px solid #ff755d;
+}
+
+.modal-footer {
+    border: none;
 }
 
 @media (max-width: 800px) {
     .info-header {
         font-size: 20px;
         font-weight: 200!important;
-        border-bottom: 2px solid #ff755d;
+        // border-bottom: 2px solid #ff755d;
     }
 }

@@ -17,6 +17,20 @@
 q,
 cite {
     font-family: Dancing Script;
+    color: #fff;
+}
+
+q {
+    font-size: 47px;
+}
+
+.frase-citazione,
+.firma-citazione {
+    width: 100% !important;
+}
+
+cite {
+    font-size: 35px;
 }
 
 .contact-grid {
@@ -36,22 +50,46 @@ table {
     }
     i {
         font-size: 30px;
-        color: #ff755d
+        color: #0091AD;
     }
 }
 
-.contact {
-    text-align: center;
+.footer {
+    text-align: left;
+    table {
+        margin: 0;
+        td {
+            font-size: 30px;
+            width: auto;
+            font-weight: 200;
+        }
+    }
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 800px) {
     .img-bottom {
         width: 80%;
         height: 500px;
     }
-    q,
-    cite {
-        font-family: Dancing Script;
-        font-size: 150px;
+    q {
+        font-size: 35px;
     }
+    cite {
+        font-size: 25px;
+    }
+}
+
+.home-image {
+    position: relative;
+}
+
+.text-centered {
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+    background-color: #0090ad48;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

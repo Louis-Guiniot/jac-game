@@ -1,7 +1,6 @@
 nav {
-    background-color: #ff755d;
+    background-color: #0091AD;
     text-transform: uppercase;
-    border: 1px black solid;
 }
 
 li {
@@ -16,7 +15,11 @@ a {
     font-size: 35px;
     font-weight: 300;
     text-transform: uppercase;
-    color: #000;
+    color: #fff;
+}
+
+.nav-link {
+    padding: 5px 10px 0px 5px;
 }
 
 img {
@@ -24,26 +27,18 @@ img {
     height: 150px;
 }
 
-.logo-box {}
+.logo-name {
+    font-weight: 500;
+    font-size: 35px;
+}
 
 .active {
     font-weight: 500;
 }
 
-@media (max-width: 1550px) {
+@media (max-width: 1500px) {
     a {
-        font-size: 26px;
-    }
-    img {
-        width: 100px;
-        height: 100px;
-        float: left;
-    }
-}
-
-@media (max-width: 1200px) {
-    a {
-        font-size: 20px;
+        font-size: 15px;
     }
     img {
         width: 100px;
